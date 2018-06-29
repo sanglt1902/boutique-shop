@@ -27,6 +27,9 @@ body {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
+.container {
+  width:90%;
+}
 .offcanvas #page {
   overflow: hidden;
   position: absolute;
@@ -66,7 +69,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #000;
   font-family: "Roboto Slab", Arial, serif;
   font-weight: 400;
-  margin: 0 0 20px 0;
+  margin: 0 auto;
 }
 
 ::-webkit-selection {
@@ -595,6 +598,10 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-blog-popular .fh5co-blog {
   margin-bottom: 0;
+  transition: all 0.3s;
+}
+#fh5co-blog-popular .fh5co-blog:hover img {
+  transform: scale(1.1);
 }
 
 .fh5co-social-icons {
@@ -625,6 +632,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .fh5co-heading {
   margin-bottom: 5em;
+  margin: 3% auto;
   position: relative;
 }
 .fh5co-heading:after {
@@ -639,6 +647,7 @@ h1, h2, h3, h4, h5, h6, figure {
   background: black;
   z-index: -1;
 }
+
 .fh5co-heading h2 {
   font-size: 40px;
   margin-bottom: 20px;
@@ -697,6 +706,9 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .fh5co-blog > a img {
   width: 100%;
+  box-shadow: 1px 1px 1px #666;
+  -moz-box-shadow: 1px 1px 1px #666;
+  -webkit-box-shadow: 1px 1px 1px #666;
 }
 @media screen and (max-width: 768px) {
   .fh5co-blog {
@@ -755,19 +767,19 @@ h1, h2, h3, h4, h5, h6, figure {
   background: rgba(0, 0, 0, 0.09);
 }
 .fh5co-blog .blog-text {
-  margin-bottom: 30px;
+  text-align: center;
   position: relative;
   width: 100%;
-  padding: 30px;
+  padding: 10px 5px 0px 5px;
   float: left;
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.08);
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.06);
-  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.06);
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.06);
+  box-shadow: 1px 1px 1px #666;
+  -moz-box-shadow: 1px 1px 1px #666;
+  -webkit-box-shadow: 1px 1px 1px #666;
 }
 .fh5co-blog .blog-text span {
   display: inline-block;
@@ -784,10 +796,10 @@ h1, h2, h3, h4, h5, h6, figure {
   padding-left: 7px;
 }
 .fh5co-blog .blog-text h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-size: 13px;
   line-height: 1.5;
   font-weight: 600;
+  white-space: pre-line;
 }
 .fh5co-blog .blog-text h3 a {
   color: black;
@@ -1425,5 +1437,17 @@ form label.error {
   font-weight: bold;
   font-size: 16px;
 }
+.simple-slider{
+  color: #fff;
+  background: #e9e8e7;
+  padding: 5%;
+  border-radius: 50%;
+  margin: 1%
+}
+.price{
+  color: black;
+  font-size: 90%
+}
+
 
 /*# sourceMappingURL=style.css.map */
